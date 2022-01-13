@@ -20,4 +20,4 @@ else if You is "パー" and JavaScript is "グー"
     console.log("あなたの勝ちです")
 else if You is "パー" and JavaScript is "チョキ"
     console.log("あなたの負けです");
-else console.log("正しいポーズを選んでください");
+else console.log("正しいポーズを選んでください")
