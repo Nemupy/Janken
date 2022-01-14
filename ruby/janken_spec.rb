@@ -1,6 +1,5 @@
-require "stringio"
 require "open3"
-CODE = File.read("./main.rb")
+
 CLIResult = Struct.new(:input, :ruby, :result)
 RSpec.describe do
   def run_cli(input)
