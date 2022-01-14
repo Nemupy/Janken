@@ -1,0 +1,3 @@
+require "rspec"
+
+RSpec.d
