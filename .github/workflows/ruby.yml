@@ -1,0 +1,24 @@
+name: Run RSpec
+on:
+  push:
+    files:
+      - *.rb
+jobs:
+  rspec:
+    name: Run RSpec
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 3.0
+      - name: Install gems
+        run: |
+          cd ruby
+          bundle install
+      - name: Run RSpec
+        run: |
+          cd ruby
+          rspec -P *_spec.rb
