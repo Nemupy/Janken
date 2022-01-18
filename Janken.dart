@@ -4,8 +4,7 @@ import 'dart:math';
 
 void main() async {
   final ansList = ["グー", "チョキ", "パー"];
-
-	print('最初はグー、じゃんけん・・・');
+  print('最初はグー、じゃんけん・・・');
   stdout.write("あなた：");
   final You = stdin.readLineSync(encoding: utf8);
   final m = new Random();
