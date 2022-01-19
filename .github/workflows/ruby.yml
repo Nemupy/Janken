@@ -20,5 +20,5 @@ jobs:
           bundle install
       - name: Run RSpec
         run: |
-          cd uby
+          cd Ruby
           rspec -P *_spec.rb
